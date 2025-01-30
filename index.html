@@ -15,17 +15,20 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
+            position: relative; /* Added for logo positioning */
         }
         .logo {
             width: 150px; /* Adjust the size as needed */
-            margin-bottom: 20px;
+            position: absolute; /* Position the logo absolutely */
+            top: 20px; /* Distance from the top */
+            left: 20px; /* Distance from the left */
         }
         h1 {
             font-size: 3rem;
             text-shadow: 2px 2px 4px #000000;
             margin-bottom: 20px;
+            margin-top: 80px; /* Added to prevent overlap with the logo */
         }
         img {
             border: 5px solid #4a4a4a;
